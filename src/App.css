@@ -1,0 +1,166 @@
+body {
+  background-color: rgb(192, 182, 223);
+}
+
+.container {
+  background-color: rgb(240, 235, 255);
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 70%;
+  min-height: 87vh; 
+  padding-bottom: 20px; 
+  box-sizing: border-box;
+}
+
+.first-heading {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.manage {
+  font-size: x-large;
+}
+
+.your-todos {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.addTodo {
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+.addTodo h2 {
+  font-size: 18px;
+  font-weight: 750;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 10px;
+}
+
+.btn {
+  background-color: blueviolet;
+  font-size: small;
+  padding: 4px 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+}
+
+.addTodo input {
+  width: 90%;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.addTodo button {
+  margin-left: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(216, 121, 216);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-top: 10px;
+  width: 95%;
+  gap: 10px; 
+  flex-wrap: nowrap; 
+  margin-left: 10px;
+}
+
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.todoText {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.noTodos {
+  display: flex;
+  margin: 12px 15px;
+}
+
+.checkbox {
+  margin-top: 3.5px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 916px) {
+  .addTodo input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .manage {
+    font-size: medium;
+  }
+
+  .addTodo input {
+    width: 70%;
+    height: 20px;
+  }
+
+  .addTodo h2 {
+    font-size: 15px;
+  }
+
+  .your-todos {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: small;
+    padding: 3px 4px;
+  }
+
+}
+
+@media screen and (max-width: 366px) {
+
+  .btn {
+    font-size: x-small;
+    padding: 3px 4px;
+  }
+
+  .buttons {
+    gap: 5px;
+  }
+}

@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(72, 0, 139);
+    color: white;
+    padding: 12px;
+
+}
+
+.logo {
+    font-weight: bold;
+    margin-left: 12px;
+    cursor: pointer;
+
+}
+
+ul {
+    display: flex;
+    gap: 6px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    margin-right: 30px;
+    transition: all 0.5s;
+}
+
+li:hover {
+    font-weight: bold;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 390px) {
+
+    .logo {
+        font-size:small ;
+    }
+
+    ul {
+        display: flex;
+        gap: 3px;
+        font-size: small;
+    }
+
+    li {
+        margin-right: 10px;
+
+    }
+}
